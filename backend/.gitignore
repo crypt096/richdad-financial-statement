@@ -1,2 +1,5 @@
-# Ignore folders
+# Ignored files
+.env
+
+# Ignored folders
 /node_modules
