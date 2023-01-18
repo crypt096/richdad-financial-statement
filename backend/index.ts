@@ -32,3 +32,7 @@ app.use(express.json());
 /**
  * Server Activation
  */
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
