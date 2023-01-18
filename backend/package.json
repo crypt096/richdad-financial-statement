@@ -2,7 +2,7 @@
   "name": "rich-dad-financial-statement-api",
   "version": "1.0.0",
   "description": "API for financial statement app",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "build": "npx tsc",
     "start": "node dist/index.js",
