@@ -25,6 +25,10 @@ const app = express();
  *  App Configuration
  */
 
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
+
 /**
  * Server Activation
  */
