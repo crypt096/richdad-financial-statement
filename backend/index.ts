@@ -1,15 +1,38 @@
-import express, { Express, Request, Response } from 'express';
-import dotenv from 'dotenv';
+/**
+ * Required External Modules
+ */
+
+import * as dotenv from "dotenv";
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
 
 dotenv.config();
 
-const app: Express = express();
-const port = process.env.PORT;
+/**
+ * App Variables
+ */
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Express + TypeScript Server');
-});
+if (!process.env.PORT) {
+  process.exit(1);
+}
 
-app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+const PORT: number = parseInt(process.env.PORT as string, 10);
+
+const app = express();
+
+/**
+ *  App Configuration
+ */
+
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
+
+/**
+ * Server Activation
+ */
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });
