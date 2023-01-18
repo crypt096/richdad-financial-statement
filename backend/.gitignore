@@ -4,4 +4,4 @@
 # Ignored folders
 .DS_Store
 node_modules
-/dist
+dist/
