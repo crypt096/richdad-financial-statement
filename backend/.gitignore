@@ -1,1 +1,2 @@
-# Example .gitignore backend file
+# Ignore folders
+/node_modules
