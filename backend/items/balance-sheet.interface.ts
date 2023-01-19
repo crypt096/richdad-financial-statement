@@ -15,6 +15,15 @@ export interface BalanceSheet {
     }
   },
   liabilities: {
-
+    homeMortgage: number;
+    schoolLoans: number;
+    carLoans: number;
+    creditCards: number;
+    retailDebt: number;
+    realEstateBusiness: {
+      name: string;
+      mortgageOrLiability: number;
+    },
+    loan: number;
   }
 }
