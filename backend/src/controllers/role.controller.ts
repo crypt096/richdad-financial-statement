@@ -1,6 +1,11 @@
 import { Request, Response } from "express";
 import { Role, RoleInput } from "../models/role.model";
 
+/**
+ * @route POST /roles
+ * @desc Create a role
+ * @return {Object} role
+ */
 const createRole = async (req: Request, res: Response) => {
   const { description, name } = req.body;
 
@@ -20,6 +25,11 @@ const createRole = async (req: Request, res: Response) => {
   return res.status(201).json({ data: roleCreated });
 };
 
+/**
+ * @route GET /roles
+ * @desc Get all roles
+ * @return {Object} roles
+ */
 const getAllRoles = async (req: Request, res: Response) => {
   const roles = await Role.find().sort("-createdAt").exec();
 
@@ -66,7 +76,6 @@ const updateRole = async (req: Request, res: Response) => {
  * @desc Delete a role
  * @return {Object} message
  */
-
 const deleteRole = async (req: Request, res: Response) => {
   const { id } = req.params;
 
