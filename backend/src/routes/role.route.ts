@@ -24,3 +24,5 @@ const roleRoute = () => {
 
   return router;
 };
+
+export { roleRoute };
