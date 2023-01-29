@@ -20,4 +20,10 @@ const createRole = async (req: Request, res: Response) => {
   return res.status(201).json({ data: roleCreated });
 };
 
-export { createRole };
+const getAllRoles = async (req: Request, res: Response) => {
+  const roles = await Role.find().sort("-createdAt").exec();
+
+  return res.status(200).json({ data: roles });
+};
+
+export { createRole, getAllRoles };
