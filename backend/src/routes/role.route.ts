@@ -1,11 +1,10 @@
 import { Router } from "express";
+import { createRole } from "../controllers/role.controller";
 
 const roleRoute = () => {
   const router = Router();
 
-  router.post("/roles", (req, res) => {
-    // TODO logic for creating role
-  });
+  router.post("/roles", createRole);
 
   router.get("/roles", (req, res) => {
     // TODO logic for retrieving roles
