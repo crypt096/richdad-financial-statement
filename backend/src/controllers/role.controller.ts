@@ -36,6 +36,11 @@ const getAllRoles = async (req: Request, res: Response) => {
   return res.status(200).json({ data: roles });
 };
 
+/**
+ * @route GET /roles/:id
+ * @desc Get a role
+ * @return {Object} role
+ */
 const getRole = async (req: Request, res: Response) => {
   const { id } = req.params;
 
@@ -48,6 +53,11 @@ const getRole = async (req: Request, res: Response) => {
   return res.status(200).json({ data: role });
 };
 
+/**
+ * @route PUT /roles/:id
+ * @desc Update a role
+ * @return {Object} role
+ */
 const updateRole = async (req: Request, res: Response) => {
   const { id } = req.params;
   const { description, name } = req.body;
