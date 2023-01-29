@@ -61,4 +61,18 @@ const updateRole = async (req: Request, res: Response) => {
   return res.status(200).json({ data: roleUpdated });
 };
 
-export { createRole, getAllRoles, getRole, updateRole };
+/**
+ * @route DELETE /roles/:id
+ * @desc Returns a list of all users
+ * @return JSON object containing an array of user objects
+ */
+
+const deleteRole = async (req: Request, res: Response) => {
+  const { id } = req.params;
+
+  await Role.findByIdAndDelete(id);
+
+  return res.status(200).json({ message: "Role deleted successfully." });
+};
+
+export { createRole, getAllRoles, getRole, updateRole, deleteRole };
