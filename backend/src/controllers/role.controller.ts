@@ -26,4 +26,16 @@ const getAllRoles = async (req: Request, res: Response) => {
   return res.status(200).json({ data: roles });
 };
 
-export { createRole, getAllRoles };
+const getRole = async (req: Request, res: Response) => {
+  const { id } = req.params;
+
+  const role = await Role.findOne({ _id: id });
+
+  if (!role) {
+    return res.status(404).json({ message: `Role with id "${id}" not found.` });
+  }
+
+  return res.status(200).json({ data: role });
+};
+
+export { createRole, getAllRoles, getRole };
