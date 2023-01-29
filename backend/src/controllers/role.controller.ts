@@ -63,8 +63,8 @@ const updateRole = async (req: Request, res: Response) => {
 
 /**
  * @route DELETE /roles/:id
- * @desc Returns a list of all users
- * @return JSON object containing an array of user objects
+ * @desc Delete a role
+ * @return {Object} message
  */
 
 const deleteRole = async (req: Request, res: Response) => {
