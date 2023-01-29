@@ -38,4 +38,27 @@ const getRole = async (req: Request, res: Response) => {
   return res.status(200).json({ data: role });
 };
 
-export { createRole, getAllRoles, getRole };
+const updateRole = async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const { description, name } = req.body;
+
+  const role = await Role.findOne({ _id: id });
+
+  if (!role) {
+    return res.status(404).json({ message: `Role with id "${id}" not found.` });
+  }
+
+  if (!name || !description) {
+    return res
+      .status(422)
+      .json({ message: "The fields name and description are required" });
+  }
+
+  await Role.updateOne({ _id: id }, { name, description });
+
+  const roleUpdated = await Role.findById(id, { name, description });
+
+  return res.status(200).json({ data: roleUpdated });
+};
+
+export { createRole, getAllRoles, getRole, updateRole };
