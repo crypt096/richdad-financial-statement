@@ -1,16 +1,10 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <header>
-  </header>
-
   <main>
-    <h1 class="text-5xl font-bold underline">
-      Hello world!
-    </h1>
+    <!-- Put components here -->
+    <income-statement-layout></income-statement-layout>
   </main>
-
-  <footer>
-  </footer>
 </template>
+
+<script setup lang="ts">
+import IncomeStatementLayout from "./components/IncomeStatementLayout.vue";
+</script>
