@@ -1,6 +1,12 @@
 <template>
   <!-- Create layout like this: https://www.richdad.com/MediaLibrary/RichDad/images/blogs/income-statement-131003.png -->
   <!-- I've just added components for you here. Add appropriate classes and make it look like in the image above -->
+
+  <!-- Remember not to attach classes to components, rather create span/div with classes and then add component as a child: 
+  <div class="something">
+    <income></income>
+  </div> -->
+
   <income></income>
   <expenses></expenses>
   <auditor></auditor>
