@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="grid grid-cols-2 mx-3 pb-3">
     <div
