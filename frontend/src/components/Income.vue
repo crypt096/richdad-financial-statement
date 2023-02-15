@@ -1,6 +1,8 @@
 <template>
   <div class="grid grid-cols-2 mx-3 pb-3">
-    <div class="col-span-2 grid justify-items-center bg-sky-100 font-bold">
+    <div
+      class="col-span-2 grid justify-items-center bg-neutral-900 text-neutral-50 font-bold"
+    >
       INCOME
     </div>
     <div class="grid justify-items-center font-bold">Description</div>
