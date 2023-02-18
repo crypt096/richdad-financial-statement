@@ -7,9 +7,10 @@
     <income></income>
   </div> -->
 
-  <income></income>
+  <!-- <income></income>
   <expenses></expenses>
-  <auditor></auditor>
+  <auditor></auditor> -->
+  this is just test
 </template>
 
 <script lang="ts" setup>
