@@ -7,9 +7,6 @@
     <income></income>
   </div> -->
 
-  <!-- <income></income>
-  <expenses></expenses>
-  <auditor></auditor> -->
   <div class="m-2 border-2 border-black">
     <div class="pt-4 pl-4 text-xl font-medium uppercase">Income Statement</div>
 
