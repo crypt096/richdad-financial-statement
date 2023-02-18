@@ -11,7 +11,8 @@
   <expenses></expenses>
   <auditor></auditor> -->
   <div class="m-2 border-2 border-black">
-    <income></income>
+    <div class="pt-4 pl-4 text-lg font-medium uppercase">Income Statement</div>
+    <!-- <income></income> -->
   </div>
 </template>
 
