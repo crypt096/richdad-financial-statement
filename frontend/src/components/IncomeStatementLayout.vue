@@ -10,7 +10,9 @@
   <!-- <income></income>
   <expenses></expenses>
   <auditor></auditor> -->
-  this is just test
+  <div class="m-2 border-2 border-black">
+    <income></income>
+  </div>
 </template>
 
 <script lang="ts" setup>
