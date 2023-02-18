@@ -7,9 +7,19 @@
     <income></income>
   </div> -->
 
-  <income></income>
-  <expenses></expenses>
-  <auditor></auditor>
+  <div class="m-2 border-2 border-black">
+    <div class="pt-4 pl-4 text-xl font-medium uppercase">Income Statement</div>
+
+    <div class="flex flex-row">
+      <div class="income w-max flex-1">
+        <income></income>
+      </div>
+      <div class="auditor w-max flex-1">
+        <!-- Auditor code here -->
+        auditor placeholder
+      </div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
