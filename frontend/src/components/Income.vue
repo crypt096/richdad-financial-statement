@@ -2,7 +2,7 @@
 <template>
   <div class="grid grid-cols-2 mx-3 pb-3">
     <div
-      class="col-span-2 grid bg-neutral-900 pl-3 text-neutral-50"
+      class="col-span-2 grid bg-neutral-900 pl-3 text-neutral-50 py-1"
     >
       INCOME
     </div>

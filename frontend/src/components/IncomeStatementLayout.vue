@@ -8,7 +8,7 @@
   </div> -->
 
   <div class="m-2 border-2 border-black">
-    <div class="pt-4 pl-4 ml-2 text-xl font-medium uppercase">Income Statement</div>
+    <div class="pt-4 pl-6 mb-2 text-xl font-medium uppercase">Income Statement</div>
 
     <div class="flex flex-row">
       <div class="income w-max flex-1">
