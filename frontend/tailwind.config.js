@@ -5,7 +5,7 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      'sans': ["Segoe UI"]
+      'sans': ["Montserrat"]
     },
     extend: {},
   },
