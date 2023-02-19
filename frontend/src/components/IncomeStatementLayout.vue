@@ -8,6 +8,9 @@
   </div> -->
 
   <div class="m-2 border-2 border-black">
+    <edit-statement-modal
+      v-if="isEditStatementModalOpened"
+    ></edit-statement-modal>
     <div class="pt-4 pl-4 text-xl font-medium uppercase">Income Statement</div>
 
     <div class="flex flex-row">
@@ -19,11 +22,25 @@
         auditor placeholder
       </div>
     </div>
+
+    <div>
+      <button type="button" @click="showEditStatementModal()">
+        Edit statement
+      </button>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { ref } from "vue";
 import Income from "./Income.vue";
 import Expenses from "./Expenses.vue";
 import Auditor from "./Auditor.vue";
+import EditStatementModal from "./EditStatementModal.vue";
+
+const isEditStatementModalOpened = ref(false);
+
+const showEditStatementModal = () => {
+  isEditStatementModalOpened.value = true;
+};
 </script>
