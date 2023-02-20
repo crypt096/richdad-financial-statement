@@ -32,7 +32,7 @@
               </span>
             </button>
           </div>
-          <!--body-->
+
           <div class="relative p-6 flex-auto">
             <p class="my-4 text-slate-500 text-lg leading-relaxed">
               I always felt like I could do anything. That’s the main thing
@@ -42,7 +42,7 @@
               was taught I could do everything.
             </p>
           </div>
-          <!--footer-->
+
           <div
             class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b"
           >
