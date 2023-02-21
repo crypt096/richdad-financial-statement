@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button type="button" class="btn btn-dark" @click="showModal">Edit statement</button>
+    <button type="button" class="btn btn-outline-dark mt-4 mx-auto" @click="showModal">Dark</button>
     
     <!-- Bootstrap modal -->
     <div class="modal" tabindex="-1" ref="modal">
