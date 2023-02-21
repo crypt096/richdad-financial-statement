@@ -1,3 +1,7 @@
 <template>
-  <button type="button" class="btn btn-primary">Hi Alex</button>
+  <financial-statement-layout></financial-statement-layout>
 </template>
+
+<script setup lang="ts">
+import FinancialStatementLayout from './components/FinancialStatementLayout.vue';
+</script>
