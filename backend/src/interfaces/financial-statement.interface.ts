@@ -12,5 +12,11 @@ export interface FinancialStatement {
   balanceSheet: {
     assets: Asset;
     liabilities: Liability;
-  }
+  },
+  passiveIncome: number;
+  totalIncome: number;
+  numberOfChildren: number;
+  perChildExpense: number;
+  totalExpenses: number;
+  monthlyCashflow: number;
 }
