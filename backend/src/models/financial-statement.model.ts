@@ -43,3 +43,10 @@ const financialStatementSchema = new Schema({
     type: Schema.Types.Number,
   }
 });
+
+const FinancialStatement: Model<FinancialStatementDocument> = mongoose.model<FinancialStatementDocument>(
+  "FinancialStatement",
+  financialStatementSchema
+);
+
+export { FinancialStatement, FinancialStatementInput, FinancialStatementDocument };
