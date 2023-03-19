@@ -8,7 +8,23 @@ import { FinancialStatement, FinancialStatementInput } from "../models/financial
  */
 
 const createFinancialStatement = async (req: Request, res: Response) => {
-  console.log(req.body);
+  const { id, incomeStatement, balanceSheet, passiveIncome, totalIncome, numberOfChildren, perChildExpense, totalExpenses, monthlyCashflow } = req.body;
+  
+  const financialStatementInput: FinancialStatementInput = {
+    id,
+    incomeStatement,
+    balanceSheet,
+    passiveIncome,
+    totalIncome,
+    numberOfChildren,
+    perChildExpense,
+    totalExpenses,
+    monthlyCashflow,
+  };
+
+  const financialStatementCreated = FinancialStatement.create(financialStatementInput);
+
+  return res.status(201).json({ data: financialStatementCreated });
 }
 
 /**
