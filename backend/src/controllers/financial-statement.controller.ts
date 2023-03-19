@@ -8,10 +8,9 @@ import { FinancialStatement, FinancialStatementInput } from "../models/financial
  */
 
 const createFinancialStatement = async (req: Request, res: Response) => {
-  const { id, incomeStatement, balanceSheet, passiveIncome, totalIncome, numberOfChildren, perChildExpense, totalExpenses, monthlyCashflow } = req.body;
+  const { incomeStatement, balanceSheet, passiveIncome, totalIncome, numberOfChildren, perChildExpense, totalExpenses, monthlyCashflow } = req.body;
   
   const financialStatementInput: FinancialStatementInput = {
-    id,
     incomeStatement,
     balanceSheet,
     passiveIncome,

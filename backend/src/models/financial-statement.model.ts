@@ -5,7 +5,6 @@ import { FinancialStatementInput } from "financial-statement-input.type";
 const financialStatementSchema = new Schema({
   id: {
     type: Schema.Types.String,
-    required: true,
     unique: true,
   },
   incomeStatement: {
