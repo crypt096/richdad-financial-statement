@@ -1,3 +1,4 @@
+import { Document } from "mongoose";
 import { Income } from "../interfaces/income-statement/income/income.interface";
 import { Expenses } from "../interfaces/income-statement/expenses/expenses.interface";
 import { Asset } from "../interfaces/balance-sheet/assets/asset.interface";
