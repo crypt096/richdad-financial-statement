@@ -5,19 +5,19 @@ import { Asset } from "../interfaces/balance-sheet/assets/asset.interface";
 import { Liability } from "../interfaces/balance-sheet/liabilities/liability.interface";
 
 export type FinancialStatementDocument = Document & {
-  id: string;
+  id?: string;
   incomeStatement: {
-    income: Income;
-    expenses: Expenses;
+    income?: Income;
+    expenses?: Expenses;
   },
   balanceSheet: {
-    assets: Asset;
-    liabilities: Liability;
+    assets?: Asset;
+    liabilities?: Liability;
   },
-  passiveIncome: number;
-  totalIncome: number;
-  numberOfChildren: number;
-  perChildExpense: number;
-  totalExpenses: number;
-  monthlyCashflow: number;
+  passiveIncome?: number;
+  totalIncome?: number;
+  numberOfChildren?: number;
+  perChildExpense?: number;
+  totalExpenses?: number;
+  monthlyCashflow?: number;
 }
