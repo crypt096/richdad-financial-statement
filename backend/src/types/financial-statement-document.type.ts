@@ -3,7 +3,7 @@ import { Expenses } from "../interfaces/income-statement/expenses/expenses.inter
 import { Asset } from "../interfaces/balance-sheet/assets/asset.interface";
 import { Liability } from "../interfaces/balance-sheet/liabilities/liability.interface";
 
-export type FinancialStatement = Document & {
+export type FinancialStatementDocument = Document & {
   id: string;
   incomeStatement: {
     income: Income;
