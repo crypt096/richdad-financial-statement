@@ -1,7 +1,7 @@
 <template>
-  <div class="container text-center">
+  <div class="container-fluid text-center">
     <div class="row">
-      <div class="col">
+      <div class="col bg-dark text-uppercase text-white">
         Income
       </div>
     </div>
