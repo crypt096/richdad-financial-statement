@@ -1,5 +1,6 @@
 {
   "name": "richdad-financial-statement",
+  "author": "Aleksandar Cvjetan | crypt096",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -39,5 +40,5 @@
     "vitest": "^0.34.6",
     "vue-tsc": "^2.0.22"
   },
-  "description": "An Ionic project"
+  "description": "RichDad Financial Statement Digital Version"
 }
