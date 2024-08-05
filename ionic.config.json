@@ -1,8 +1,0 @@
-{
-  "name": "richdad-financial-statement",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite",
-  "id": "0cc893a5"
-}
