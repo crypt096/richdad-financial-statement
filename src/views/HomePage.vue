@@ -1,7 +1,9 @@
 <template>
   <ion-page>
     <ion-content>
-      Hello
+      <ion-card>
+        hello
+      </ion-card>
     </ion-content>
   </ion-page>
 </template>
@@ -11,5 +13,4 @@ import {
   IonPage,
   IonContent
 } from '@ionic/vue';
-import { ref } from 'vue';
 </script>
